@@ -1,0 +1,19 @@
+<div class="row-md-5" appHightlight  > 
+
+<p>
+    le nom : {{ personne?.nom | titlecase}} <br>
+    le prenom : {{ personne?.prenom | titlecase}} <br>
+    l'age : {{ personne.age }} <br>
+    le job : {{ personne.job }} <br>
+</p>
+
+<button class="btn btn-primary" (click)="embaucher(personne)" >embaucher</button>
+<button class="btn btn-danger" (click)="debaucher(personne)" >débaucher</button> <br>
+
+
+</div>
+
+<p *ngIf="pris"  >
+        <button class="btn btn-success" >déja embaucher </button>
+    </p>
+

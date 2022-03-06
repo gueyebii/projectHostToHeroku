@@ -1,0 +1,21 @@
+<ul>
+    <li  *ngFor="let team of teams; let ind = index">
+        {{ team }} - {{ ind }}
+    </li>
+</ul>
+
+
+    <br>
+    <hr>
+    <input type="text" class="form-control" appRaindbow *ngIf="show">
+    <br>
+    <hr>
+
+
+    <button class="btn btn-primary" (click)="show = !show" >clique me !!</button>
+    
+<br>
+<hr>
+<button (click)="afficherTableau()" class="btn btn-success" >ajouter personne</button>
+<br>
+<hr>

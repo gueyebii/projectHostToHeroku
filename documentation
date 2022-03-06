@@ -1,0 +1,6 @@
+--20 introduction au services services : 
+nous permet de centraliser des données 
+-- pour creer un service : ng generate service [nom du service] | ng g s [nom du service ]
+
+--@injectable: la notion d'injection nous permet d'injecter des services dans notre service 
+l'injection de dependance est un patron de conception  utiliser par pas mal de framework. 
