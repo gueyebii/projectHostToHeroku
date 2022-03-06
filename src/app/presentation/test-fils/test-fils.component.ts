@@ -9,28 +9,31 @@ import { Personne } from 'src/app/model/personne';
 })
 export class TestFilsComponent implements OnInit {
   green = "green";
-  pris = false;
+  pris = "hiden";
   @Input() personne : Personne;
   constructor(private embaucherservice: EmbaucherService) {
     this.personne = new Personne;
    }
    
   ngOnInit(): void {
+    this.pris = this.pris;
   }
 
   embaucher(personne: Personne)
   {
     this.embaucherservice.embaucher(personne);
     this.embaucherservice.afficher();
-    this.pris = true;
+    this.pris = ""
+    
   }
 
   debaucher(personne : Personne){
     this.embaucherservice.debaucher(personne);
     this.embaucherservice.afficher();
-
-    this.pris = false; 
+    this.pris = "hiden";
   }
 
+
+  
 
 }

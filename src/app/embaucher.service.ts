@@ -6,6 +6,7 @@ import { Personne } from './model/personne';
 })
 export class EmbaucherService {
   private personnes: Personne[];
+
   constructor() { 
     this.personnes = [];
   }
@@ -17,6 +18,7 @@ export class EmbaucherService {
     {
       this.personnes.push(personne);
       alert(`${personne.prenom} est embauché avec succés`)
+     
     }
     else{
       alert(`${personne.prenom} est déja embaucher  `)
@@ -30,6 +32,7 @@ export class EmbaucherService {
     if(index >= 0)
     {
       this.personnes.splice(index, 1);
+     
     }else
     {
       alert(`${personne.prenom} n'est pas embaucher !!!`)

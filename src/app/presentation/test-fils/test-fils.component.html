@@ -9,9 +9,10 @@
 
 <button class="btn btn-primary" (click)="embaucher(personne)" >embaucher</button>
  <button class="btn btn-danger" (click)="debaucher(personne)" >débaucher</button>
-<p *ngIf="pris"  >
+<p [hidden]="pris"  >
         <button class="btn btn-success" id="embaucher"> embauché(e) </button>
 </p>
+
 </div>
 
 
