@@ -19,6 +19,7 @@ export class TestFilsComponent implements OnInit {
     this.pris = this.pris;
   }
 
+
   embaucher(personne: Personne)
   {
     this.embaucherservice.embaucher(personne);
@@ -33,7 +34,5 @@ export class TestFilsComponent implements OnInit {
     this.pris = "hiden";
   }
 
-
-  
 
 }

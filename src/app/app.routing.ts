@@ -10,7 +10,7 @@ import { TestComponent } from "./presentation/test/test.component";
 
 const APP_ROUTING: Routes = [
     {path: 'liste', redirectTo: '/', pathMatch: 'full'},
-    {path:'test', component: ListeComponent },
+    {path:'test/:default', component: ListeComponent },
     {path: '', component: TestComponent},
     {path: 'style', component: StyleComponent}
 ];

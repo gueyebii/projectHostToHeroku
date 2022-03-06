@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { EmbaucherService } from '../embaucher.service';
 import { Personne } from '../model/personne';
 
@@ -9,12 +10,25 @@ import { Personne } from '../model/personne';
 })
 export class ListeComponent implements OnInit {
 
+  bgcolor: any;
   personnes: Personne[];
-  constructor(private embaucherservice: EmbaucherService) {
+  constructor(
+    private embaucherservice: EmbaucherService,
+    private activedroute: ActivatedRoute
+    ) {
     this.personnes = this.embaucherservice.listeEmbauher();
+    this.bgcolor = "";
   }
 
   ngOnInit(): void {
+    this.activedroute.params.subscribe(
+        (params) => {
+         /*  console.log(params); */
+          this.bgcolor = params['default']
+        }
+    )
   }
+
+
 
 }

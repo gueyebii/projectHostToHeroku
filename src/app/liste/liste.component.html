@@ -1,6 +1,8 @@
-<hr>
+<div [style.backgroundColor]="bgcolor">
+    <hr>
 <h4>liste des employé : </h4>
 <ul *ngFor="let personne of personnes"  >
     <li>  <span class="enGras">{{ personne.nom }} {{ personne.prenom }}</span>    agé de <span class="enGras">{{ personne.age }}</span> ans travail ici en tant que <span class="enGras">{{ personne.job }}</span>  </li>
 </ul>
 <hr>
+</div>
