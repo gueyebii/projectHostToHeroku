@@ -8,12 +8,11 @@
 </p>
 
 <button class="btn btn-primary" (click)="embaucher(personne)" >embaucher</button>
-<button class="btn btn-danger" (click)="debaucher(personne)" >débaucher</button> <br>
-
-
+ <button class="btn btn-danger" (click)="debaucher(personne)" >débaucher</button>
+<p *ngIf="pris"  >
+        <button class="btn btn-success" id="embaucher"> embauché(e) </button>
+</p>
 </div>
 
-<p *ngIf="pris"  >
-        <button class="btn btn-success" >déja embaucher </button>
-    </p>
+
 
