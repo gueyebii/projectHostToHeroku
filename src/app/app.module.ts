@@ -11,6 +11,8 @@ import { RaindbowDirective } from './directive/raindbow.directive';
 import { TestComponent } from './presentation/test/test.component';
 import { TestFilsComponent } from './presentation/test-fils/test-fils.component';
 import { ListeComponent } from './liste/liste.component';
+import { ROUTING } from './app.routing';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { ListeComponent } from './liste/liste.component';
     RaindbowDirective,
     TestComponent,
     TestFilsComponent,
-    ListeComponent
+    ListeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
