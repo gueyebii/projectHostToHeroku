@@ -15,6 +15,7 @@ const APP_ROUTING: Routes = [
     {path:'test/:default', component: ListeComponent },
     {path: '', component: TestComponent},
     {path:'detail/:id', component: DetailComponent},
+    {path:'detail/:id/#article', component: DetailComponent},
     {path: 'style', component: StyleComponent}
 ];
 

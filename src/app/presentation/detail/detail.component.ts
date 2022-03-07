@@ -13,12 +13,14 @@ export class DetailComponent implements OnInit {
   personne: Personne;
   constructor(
     private testservice: TestService,
-    private activatedRouter: ActivatedRoute
+    private activatedRouter: ActivatedRoute,
+    private activedRoute: ActivatedRoute
   ) {
     this.personne = new Personne;
    }
 
   ngOnInit(): void {
+   
     this.activatedRouter.params.subscribe(
       (params) => {
         this.personne = this.testservice.getElelementById(params['id'])
