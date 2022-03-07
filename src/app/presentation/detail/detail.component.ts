@@ -19,6 +19,7 @@ export class DetailComponent implements OnInit {
     this.personne = new Personne;
    }
 
+   
   ngOnInit(): void {
    
     this.activatedRouter.params.subscribe(
@@ -27,6 +28,5 @@ export class DetailComponent implements OnInit {
       }
     )
   }
-
 
 }
