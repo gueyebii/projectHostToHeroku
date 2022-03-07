@@ -10,14 +10,11 @@ import { TestComponent } from "./presentation/test/test.component";
 
 
 const APP_ROUTING: Routes = [
-    {path: 'liste', redirectTo: '/', pathMatch: 'full'},
+    {path: 'liste', redirectTo: '', pathMatch: 'full'},
     {path:'test/:default', component: ListeComponent },
     {path: '', component: TestComponent},
     {path: 'style', component: StyleComponent}
 ];
-
-
-
 
 
 export const ROUTING = RouterModule.forRoot(APP_ROUTING);
