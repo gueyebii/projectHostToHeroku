@@ -27,6 +27,7 @@ export class ListeComponent implements OnInit {
          /*  console.log(params); */
           this.bgcolor = params['default']
         }
+       
     )
   }
 

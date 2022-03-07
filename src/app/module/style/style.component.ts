@@ -23,7 +23,10 @@ export class StyleComponent implements OnInit {
     'olympique de marseille'
   ]
 
-  constructor(private testservice: TestService) {  this.personne = new Personne("ndiaye","soukey",35,"formatrice");}
+  constructor(private testservice: TestService) 
+  { 
+     this.personne = new Personne(8,"ndiaye","soukey",35,"formatrice");
+  }
   
   ngOnInit(): void {
    

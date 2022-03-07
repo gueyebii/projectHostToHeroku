@@ -14,6 +14,7 @@ import { ListeComponent } from './liste/liste.component';
 import { ROUTING } from './app.routing';
 import { HeaderComponent } from './header/header.component';
 import { TestRoutingComponent } from './test-routing/test-routing.component';
+import { DetailComponent } from './presentation/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TestRoutingComponent } from './test-routing/test-routing.component';
     TestFilsComponent,
     ListeComponent,
     HeaderComponent,
-    TestRoutingComponent
+    TestRoutingComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

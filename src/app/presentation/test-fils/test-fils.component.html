@@ -1,11 +1,13 @@
 <div class="row-md-5" appHightlight  > 
 
 <p>
+    l'identifiant : {{ personne.id }}
     le nom : {{ personne?.nom | titlecase}} <br>
     le prenom : {{ personne?.prenom | titlecase}} <br>
     l'age : {{ personne.age }} <br>
     le job : {{ personne.job }} <br>
 </p>
+    <button (click)="readMode()" class="btn btn-primary">lire la suite...</button>
 
 <button class="btn btn-primary" (click)="embaucher(personne)" >embaucher</button>
  <button class="btn btn-danger" (click)="debaucher(personne)" >débaucher</button>

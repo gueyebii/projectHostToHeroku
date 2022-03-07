@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { EmbaucherService } from 'src/app/embaucher.service';
 import { Personne } from 'src/app/model/personne';
 
@@ -11,7 +12,10 @@ export class TestFilsComponent implements OnInit {
   green = "green";
   pris = "hiden";
   @Input() personne : Personne;
-  constructor(private embaucherservice: EmbaucherService) {
+  constructor(
+    private embaucherservice: EmbaucherService,
+    private router: Router
+    ) {
     this.personne = new Personne;
    }
    
@@ -34,5 +38,10 @@ export class TestFilsComponent implements OnInit {
     this.pris = "hiden";
   }
 
+  readMode()
+  {
+    const link = ['detail',this.personne.id]
+    this.router.navigate(link)
+  }
 
 }
