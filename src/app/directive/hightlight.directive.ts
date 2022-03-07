@@ -21,7 +21,7 @@ export class HightlightDirective {
 
    @HostListener('mouseenter') mouseenter()
    {
-    this.bg =  this.tableau[3];
+    this.bg =  "#EBFAEA";
    }
 
 

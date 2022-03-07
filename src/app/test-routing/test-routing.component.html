@@ -2,7 +2,7 @@
 
 <br>
 <div class="container">
-    <div class="row">
+    <div class="row row-cols-auto">
         <div class="col-5">
             <select class="form-select"  #componentSelect (click)="goToComponent(componentSelect.value)" >
             <option value="liste">liste </option>
@@ -10,10 +10,10 @@
             <option value="/">acceuil</option>
             </select>
         </div>
-        <div class="col-6 col-md-4">
+        <div class="col-4 ">
                 <input type="text" class="form-control" placeholder="your name please">
         </div>
-        <div class="col-1">
+        <div class="col-3">
             <div class="btn btn-danger">valider</div>
         </div>
     </div>
