@@ -1,5 +1,6 @@
 import { RouterModule, Routes } from "@angular/router";
 import { Router } from "express";
+import { url } from "inspector";
 import { listenerCount } from "process";
 import { ListeComponent } from "./liste/liste.component";
 import { StyleComponent } from "./module/style/style.component";
@@ -16,7 +17,8 @@ const APP_ROUTING: Routes = [
 ];
 
 
+
+
+
 export const ROUTING = RouterModule.forRoot(APP_ROUTING);
-
-
 

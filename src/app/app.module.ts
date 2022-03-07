@@ -13,6 +13,7 @@ import { TestFilsComponent } from './presentation/test-fils/test-fils.component'
 import { ListeComponent } from './liste/liste.component';
 import { ROUTING } from './app.routing';
 import { HeaderComponent } from './header/header.component';
+import { TestRoutingComponent } from './test-routing/test-routing.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HeaderComponent } from './header/header.component';
     TestComponent,
     TestFilsComponent,
     ListeComponent,
-    HeaderComponent
+    HeaderComponent,
+    TestRoutingComponent
   ],
   imports: [
     BrowserModule,
