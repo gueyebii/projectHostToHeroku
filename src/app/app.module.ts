@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { StyleComponent } from './module/style/style.component';
 import { FilsComponent } from './module/fils/fils.component';
@@ -15,6 +14,7 @@ import { ROUTING } from './app.routing';
 import { HeaderComponent } from './header/header.component';
 import { TestRoutingComponent } from './test-routing/test-routing.component';
 import { DetailComponent } from './presentation/detail/detail.component';
+import { LocalhostComponent } from './localhost/localhost.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +29,10 @@ import { DetailComponent } from './presentation/detail/detail.component';
     ListeComponent,
     HeaderComponent,
     TestRoutingComponent,
-    DetailComponent
+    DetailComponent,
+    LocalhostComponent
   ],
+
   imports: [
     BrowserModule,
     FormsModule,
@@ -39,4 +41,5 @@ import { DetailComponent } from './presentation/detail/detail.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
