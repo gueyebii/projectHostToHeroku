@@ -11,6 +11,7 @@ export class EmbaucherService {
     this.personnes = [];
   }
 
+
   //pour embaucher une personne 
   embaucher(personne : Personne): void {
     const index = this.personnes.indexOf(personne);
@@ -26,6 +27,7 @@ export class EmbaucherService {
   
   }
 
+
   //pour debaucher une personne
   debaucher(personne: Personne): void {
     const index = this.personnes.indexOf(personne);
@@ -39,12 +41,13 @@ export class EmbaucherService {
     }
   }
 
+
   //afficher la liste des embaucher
   afficher()
   {
-    console.log(this.personnes);
-    
+    console.log(this.personnes); 
   }
+
 
   //retourner la liste des embauchés
 

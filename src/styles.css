@@ -1,3 +1,12 @@
 
 
 @import url('~bootstrap/dist/css/bootstrap.css');
+
+body{
+    background-color: indianred;
+}
+
+.container
+{
+    background-color: white;
+}

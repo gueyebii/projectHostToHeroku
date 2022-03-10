@@ -6,4 +6,10 @@ header
     font-style: bold;
 }
 
+.entete
+{
+    background-color:olive;
+   /*  position: fixed; */    
+    
+}
 

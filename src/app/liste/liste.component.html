@@ -1,8 +1,40 @@
-<div [style.backgroundColor]="bgcolor">
+<div class="container">
     <hr>
-<h4>liste des employé : </h4>
-<ul *ngFor="let personne of personnes"  >
-    <li>  <span class="enGras"> id: {{ personne.id }} {{ personne.nom }} {{ personne.prenom }}</span>    agé de <span class="enGras">{{ personne.age }}</span> ans travail ici en tant que <span class="enGras">{{ personne.job }}</span>  </li>
-</ul>
+<h4>liste des employé(e)s  : </h4>
+<div class="row liste" >
+    <div class="col-6">
+            <table class="table table-dash">
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Age</th>
+                <th>Job</th>
+                <tr *ngFor="let personne of personnes">
+                    <td> {{ personne.id }} </td>
+                    <td> {{ personne.nom }} </td>
+                    <td> {{ personne.prenom }} </td>
+                    <td> {{ personne.age }} </td>
+                    <td> {{ personne.job }} </td>
+                </tr>
+        </table>
+    </div>
+    <div class="col-6 col7">
+        <p>du text par ici</p>
+        
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima distinctio nobis, impedit modi sequi dignissimos molestiae ex sint? Suscipit dignissimos quisquam magnam dolorem quidem dolorum alias sapiente modi debitis molestias.
+            Molestias dolore eum omnis ratione, excepturi ex porro nam repellat obcaecati aut inventore, et distinctio non amet numquam minima modi eius at ducimus illum facilis. Consequatur voluptates ratione similique earum!
+            Nulla labore porro fugit, esse, rem incidunt iusto illo quae ad quia ipsum quod! Nesciunt incidunt dolores nisi sit tenetur quidem ratione perspiciatis quibusdam accusantium unde quasi praesentium, delectus veritatis?
+            Laudantium ad sed quibusdam eaque totam incidunt, deleniti eligendi magnam pariatur maxime sint quas vero laborum hic architecto explicabo quisquam fuga dolores molestias repellendus doloremque expedita praesentium! Ad, doloremque omnis!
+        </p>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, nisi. Qui tenetur iure fuga aliquid sint. Labore magnam tempore quia ducimus aut! Totam quam dolorum cumque! Esse tempora voluptate reiciendis.
+        Earum voluptas eos sit rem dolorum, vero obcaecati? Nemo voluptatum libero, molestiae sit exercitationem omnis, dolorem temporibus repellat quis maiores id esse a dolores minus est porro cumque! Deserunt, repellendus.
+        </p>
+
+    </div>
+</div>
+
 <hr>
 </div>

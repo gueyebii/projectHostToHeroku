@@ -15,6 +15,7 @@ import { HeaderComponent } from './header/header.component';
 import { TestRoutingComponent } from './test-routing/test-routing.component';
 import { DetailComponent } from './presentation/detail/detail.component';
 import { LocalhostComponent } from './localhost/localhost.component';
+import { TexteComponent } from './texte/texte.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LocalhostComponent } from './localhost/localhost.component';
     HeaderComponent,
     TestRoutingComponent,
     DetailComponent,
-    LocalhostComponent
+    LocalhostComponent,
+    TexteComponent
   ],
 
   imports: [

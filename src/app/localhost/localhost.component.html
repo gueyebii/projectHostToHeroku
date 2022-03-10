@@ -1,1 +1,22 @@
-<p>localhost works!</p>
+<br>
+<div class="row block">
+    <div   class="col-6 ">
+        <table class="table classe1" >
+            <th>id</th>
+            <th>nom</th>
+            <th>prenom</th>
+            <th>age</th>
+            <th>job</th>
+            <tr *ngFor="let personne of personnes">
+                <td><button class="btn btn-danger"> <a  [routerLink]=" ['style'] " class="decoration" >{{ personne.id }}</a> </button></td>
+                <td> {{ personne.nom }} </td>
+                <td> {{ personne.prenom }} </td>
+                <td> {{ personne.age }} </td>
+                <td> <strong>{{ personne.job }} </strong></td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-6" >
+        <app-texte></app-texte>
+    </div>
+</div>

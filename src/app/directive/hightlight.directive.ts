@@ -6,7 +6,6 @@ import { Directive, HostBinding, HostListener } from '@angular/core';
 
 export class HightlightDirective {
 
-
   tableau  = [
     'gray',
     'pink',
@@ -29,6 +28,5 @@ export class HightlightDirective {
   {
     this.bg = this.tableau[4]
   }
-
 
 }

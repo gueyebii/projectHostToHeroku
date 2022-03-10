@@ -1,0 +1,13 @@
+a{
+    font-weight: bold;
+    
+}
+
+.block
+{
+    padding: 20px;
+  /*   background-color: gold; */
+    border: 1px solid pink;
+    border-radius: 10px;
+}
+
